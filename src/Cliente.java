@@ -1,5 +1,5 @@
 public class Cliente {
-    Float peso;
-    Float altura;
-    Integer idade;
+    private Float peso;
+    private Float altura;
+    private Integer idade;
 }

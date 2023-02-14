@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Clinica {
-    String nomeDoDono;
-    String nomeDaClinica;
-    String CNPJ;
-    String logradouro;
-    Integer numeroDaClinica;
-    List listaDeCLientes = new ArrayList<Cliente>();
+    private String nomeDoDono;
+    private String nomeDaClinica;
+    private String CNPJ;
+    private String logradouro;
+    private Integer numeroDaClinica;
+    private List listaDeCLientes = new ArrayList<Cliente>();
 
     public void calcularIMC(Float peso, Float altura) {
         Float IMC = peso / (altura * altura);
@@ -22,6 +22,9 @@ public class Clinica {
         } else if (IMC > 40.0F) {
             System.out.println(String.format("%.2f = Obesidade grave", IMC));
         }
+    }
 
+    public void adicionarCliente(Cliente cliente) {
+        listaDeCLientes.add(cliente);
     }
 }
