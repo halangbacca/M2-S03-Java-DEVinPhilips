@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class Clinica {
@@ -7,7 +6,16 @@ public class Clinica {
     private String CNPJ;
     private String logradouro;
     private Integer numeroDaClinica;
-    private List listaDeCLientes = new ArrayList<Cliente>();
+    private List<Cliente> listaDeCLientes;
+
+    public Clinica(String nomeDoDono) {
+        this.nomeDoDono = nomeDoDono;
+    }
+
+    public Clinica(String nomeDoDono, List<Cliente> listaDeCLientes) {
+        this.nomeDoDono = nomeDoDono;
+        this.listaDeCLientes = listaDeCLientes;
+    }
 
     public void calcularIMC(Float peso, Float altura) {
         Float IMC = peso / (altura * altura);
