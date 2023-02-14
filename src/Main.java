@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Clinica clinica = new Clinica();
+
+        clinica.calcularIMC(58.0, 1.50);
     }
 }
