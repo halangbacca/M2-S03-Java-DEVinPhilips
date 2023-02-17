@@ -3,6 +3,7 @@ public class Cliente {
     private Float altura;
     private Integer idade;
 
+    // Construtores
     public Cliente(Float altura, Float peso) {
         this.altura = altura;
         this.peso = peso;
@@ -14,5 +15,28 @@ public class Cliente {
         this.idade = idade;
     }
 
+    // Getters e Setters
+    public Float getPeso() {
+        return peso;
+    }
 
+    public void setPeso(Float peso) {
+        this.peso = peso;
+    }
+
+    public Float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(Float altura) {
+        this.altura = altura;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
 }
