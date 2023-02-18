@@ -3,10 +3,11 @@ public class Main {
 
         Clinica clinica = new Clinica("Halan");
 
-        clinica.adicionarCliente(new Cliente(175F, 55F));
+        clinica.adicionarCliente(new Cliente("Halan", 175F, 55F));
 
         System.out.println(clinica.tratamento(0)); // 50
         System.out.println(clinica.tratamento(0, 5.0F)); // 45
+        System.out.println(clinica.getListaDeClientes().toString());
 
     }
 }

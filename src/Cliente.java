@@ -1,10 +1,12 @@
 public class Cliente {
+    private String nome;
     private Float peso;
     private Float altura;
     private Integer idade;
 
     // Construtores
-    public Cliente(Float altura, Float peso) {
+    public Cliente(String nome, Float altura, Float peso) {
+        this.nome = nome;
         this.altura = altura;
         this.peso = peso;
     }

@@ -57,47 +57,6 @@ public class Clinica {
         return listaDeClientes.get(id).getPeso();
     }
 
-    // Getters e Setters
-    public String getNomeDoDono() {
-        return nomeDoDono;
-    }
-
-    public void setNomeDoDono(String nomeDoDono) {
-        this.nomeDoDono = nomeDoDono;
-    }
-
-    public String getNomeDaClinica() {
-        return nomeDaClinica;
-    }
-
-    public void setNomeDaClinica(String nomeDaClinica) {
-        this.nomeDaClinica = nomeDaClinica;
-    }
-
-    public String getCNPJ() {
-        return CNPJ;
-    }
-
-    public void setCNPJ(String CNPJ) {
-        this.CNPJ = CNPJ;
-    }
-
-    public String getLogradouro() {
-        return logradouro;
-    }
-
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
-    }
-
-    public Integer getCodigoDaClinica() {
-        return codigoDaClinica;
-    }
-
-    public void setCodigoDaClinica(Integer codigoDaClinica) {
-        this.codigoDaClinica = codigoDaClinica;
-    }
-
     public List<Cliente> getListaDeClientes() {
         return listaDeClientes;
     }
