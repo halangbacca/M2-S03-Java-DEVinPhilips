@@ -5,7 +5,8 @@ public class Main {
 
         clinica.adicionarCliente(new Cliente(175F, 55F));
 
-        System.out.println(clinica.tratamento(0));
+        System.out.println(clinica.tratamento(0)); // 50
+        System.out.println(clinica.tratamento(0, 5.0F)); // 45
 
     }
 }

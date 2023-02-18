@@ -20,8 +20,9 @@ public class Cliente {
         return peso;
     }
 
-    public void setPeso(Float peso) {
+    public Float setPeso(Float peso) {
         this.peso = peso;
+        return peso;
     }
 
     public Float getAltura() {

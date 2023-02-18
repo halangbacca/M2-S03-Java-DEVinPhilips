@@ -40,7 +40,7 @@ public class Clinica {
     }
 
     public Float tratamento(Integer id) {
-        if (listaDeClientes.size() < id) {
+        if (listaDeClientes.size() < id - 1) {
             System.out.println("Cliente não identificado!");
         } else {
             listaDeClientes.get(id).setPeso(listaDeClientes.get(id).getPeso() - 5);
@@ -48,6 +48,14 @@ public class Clinica {
         return listaDeClientes.get(id).getPeso();
     }
 
+    public Float tratamento(Integer id, Float valor) {
+        if (listaDeClientes.size() < id) {
+            System.out.println("Cliente não identificado!");
+        } else {
+            listaDeClientes.get(id).setPeso(listaDeClientes.get(id).getPeso() - valor);
+        }
+        return listaDeClientes.get(id).getPeso();
+    }
 
     // Getters e Setters
     public String getNomeDoDono() {
