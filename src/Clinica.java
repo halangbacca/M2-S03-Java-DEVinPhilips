@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Clinica {
+    // Atributos
     private String nomeDoDono;
     private String nomeDaClinica;
     private String CNPJ;
@@ -40,23 +41,32 @@ public class Clinica {
     }
 
     public Float tratamento(Integer id) {
-        if (listaDeClientes.size() < id - 1) {
-            System.out.println("Cliente não identificado!");
-        } else {
+        float peso = 0F;
+
+        try {
             listaDeClientes.get(id).setPeso(listaDeClientes.get(id).getPeso() - 5);
+            peso = listaDeClientes.get(id).getPeso();
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Cliente não identificado!");
+            System.exit(1);
         }
-        return listaDeClientes.get(id).getPeso();
+        return peso;
     }
 
     public Float tratamento(Integer id, Float valor) {
-        if (listaDeClientes.size() < id) {
-            System.out.println("Cliente não identificado!");
-        } else {
+        Float peso = 0F;
+
+        try {
             listaDeClientes.get(id).setPeso(listaDeClientes.get(id).getPeso() - valor);
+            peso = listaDeClientes.get(id).getPeso();
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Cliente não identificado!");
+            System.exit(1);
         }
-        return listaDeClientes.get(id).getPeso();
+        return peso;
     }
 
+    // Getter
     public List<Cliente> getListaDeClientes() {
         return listaDeClientes;
     }

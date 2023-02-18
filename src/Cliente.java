@@ -1,4 +1,5 @@
 public class Cliente {
+    // Atributos
     private String nome;
     private Float peso;
     private Float altura;
@@ -27,19 +28,11 @@ public class Cliente {
         return peso;
     }
 
-    public Float getAltura() {
-        return altura;
-    }
-
-    public void setAltura(Float altura) {
-        this.altura = altura;
-    }
-
-    public Integer getIdade() {
-        return idade;
-    }
-
-    public void setIdade(Integer idade) {
-        this.idade = idade;
+    // toString
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                '}';
     }
 }
